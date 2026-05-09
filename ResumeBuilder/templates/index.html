@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/jspdf.umd.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/html2canvas.min.js') }}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- BUILD SECTION -->
+        <section class="build-section">
+            <h2>Build Your Resume</h2>
+
+            <!-- Personal Info -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <input type="text" id="fullName" placeholder="Full Name" oninput="updatePreview()">
+                <input type="email" id="email" placeholder="Email" oninput="updatePreview()">
+                <input type="tel" id="phone" placeholder="Phone" oninput="updatePreview()">
+                <textarea id="summary" placeholder="Professional Summary" rows="3" oninput="updatePreview()"></textarea>
+            </fieldset>
+
+            <!-- Education -->
+            <fieldset>
+                <legend>Education</legend>
+                <div id="educationContainer"></div>
+                <button type="button" onclick="addEducation()">+ Add Education</button>
+            </fieldset>
+
+            <!-- Work Experience -->
+            <fieldset>
+                <legend>Work Experience</legend>
+                <div id="experienceContainer"></div>
+                <button type="button" onclick="addExperience()">+ Add Experience</button>
+            </fieldset>
+
+            <!-- Skills -->
+            <fieldset>
+                <legend>Skills (comma separated)</legend>
+                <input type="text" id="skills" placeholder="e.g. Python, JavaScript, React" oninput="updatePreview()">
+            </fieldset>
+        </section>
+
+        <!-- PREVIEW SECTION -->
+        <section class="preview-section">
+            <h2>Live Preview</h2>
+            <div class="resume-preview-wrapper">
+                <div id="resumePreview" class="resume-preview"></div>
+            </div>
+            <button id="downloadBtn" onclick="generatePDF()">Download PDF</button>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
