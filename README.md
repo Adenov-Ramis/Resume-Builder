@@ -23,6 +23,9 @@ Simply prepare python interpreter ready to process Flask application
 **Screenshots or UI diagrams**
 
 ![Screenshot1.png](./Screenshots/Screenshot1.png)
+\
+\
+\
 ![Screenshot2.png](./Screenshots/Screenshot2.png)
 
 **Demo Video:**\
