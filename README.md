@@ -18,7 +18,7 @@ frontend, backend
 Flask, HTML, CSS, JavaScript
 
 **Setup & run instructions:**\
-Simply prepare python interpreter ready to process Flask application
+Simply prepare python interpreter ready to process Flask application and prepare .venv environment
 
 **Screenshots or UI diagrams**
 
@@ -31,3 +31,5 @@ Simply prepare python interpreter ready to process Flask application
 **Demo Video:**\
 https://drive.google.com/file/d/18h5ZuGBEzV5ngTeZikKb6FhORm0zvkyB/view?usp=drive_link
 
+**Classmate's Feedback:**\
+https://drive.google.com/file/d/1kmEe9yOLPMSkDfYzmsityxmFsORfRJxg/view?usp=drive_link
